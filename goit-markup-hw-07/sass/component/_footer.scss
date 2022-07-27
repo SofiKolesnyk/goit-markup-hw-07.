@@ -1,0 +1,71 @@
+.footer .container {
+    display: flex;
+}
+
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__link {
+    font-family: Raleway;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer__logo {
+    color: var(--name-color);
+}
+
+.footer__address {
+    display: block;
+    font-style: italic;
+}
+
+.footer__item {
+    margin-bottom: 9px;
+
+
+&:last-child {
+    margin-bottom: 0px;
+}
+}
+
+.footer__contact-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    cursor: default;
+    margin-top: 20px;
+
+
+&:hover,
+&:focus {
+    color: var(--name-color);
+}
+}
+
+.footer__contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: default;
+
+
+&:hover,
+&:focus {
+    color: var(--name-color);
+}
+}

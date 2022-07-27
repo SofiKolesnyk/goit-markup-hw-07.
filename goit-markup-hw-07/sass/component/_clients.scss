@@ -1,0 +1,74 @@
+.clients-title {
+    height: 42px;
+    left: 606px;
+    top: 2401px;
+    bottom: 488px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 32px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    text-align: center;
+    background-position: 50% 50%;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+
+
+&:hover {
+    border: 2px solid var(--name-color);
+    border-radius: 4px;
+}
+
+&:hover .clients-icon {
+    fill: var(--name-color);
+}
+
+&:hover .clients-icon,
+&:focus .clients-icon {
+    fill: var(--name-color);
+}
+}
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: rgba(175, 177, 184, 1);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+}
+
+
+
+
+.clients-item {
+    bottom: 346px;
+}
+
+.clients-list li:not(:last-child) {
+    margin-right: 30px;
+}
+

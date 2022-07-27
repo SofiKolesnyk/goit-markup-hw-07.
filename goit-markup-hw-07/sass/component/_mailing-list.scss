@@ -1,0 +1,83 @@
+.footer-join:not(:first-child) {
+    margin-left: 70px;
+}
+
+.footer-join:last-child {
+    margin-left: auto;
+}
+
+.footer-join .logo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.join-label,
+.footer-join__label {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1429;
+    letter-spacing: 0.03em;
+    text-decoration: str;
+    text-transform: uppercase;
+}
+
+.footer-join__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-join__field {
+    display: flex;
+}
+
+.footer-join__input {
+    width: 358px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 15px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+}
+
+.footer-join__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 200px;
+    padding: 10px 3px;
+    border-radius: 4px;
+    margin-left: 12px;
+
+    color: #FFFFFF;
+    background-color: var(--name-color);
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:focus,
+&:hover {
+    background-color: #188ce8;
+}
+}
+
+.footer-join__icon {
+    margin-left: 10px;
+    fill: currentColor;
+}

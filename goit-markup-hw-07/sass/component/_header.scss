@@ -1,0 +1,141 @@
+.page-header {
+    border-bottom: 1px solid #ececec;
+    flex-wrap: nowrap;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #FFFFFF;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav__main,
+.tems {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav__link {
+    margin-right: 93px;
+    font-family: 'Raleway', 'Verdana', 'Tahoma', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+}
+
+.site-nav__logo {
+    color: var(--name-color)
+}
+
+.site-nav__item {
+    margin-right: 50px;
+    display: inline-block;
+
+
+ &:last-child {
+    margin-right: 0px;
+}
+}
+.site-nav__text {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    position: relative;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+
+
+ &:hover {
+    color: var(--name-color);
+}
+
+
+ &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 4%;
+    background-color: var(--name-color);
+    opacity: 0;
+    transition: opacity 250ms var(--animation);
+}
+
+
+&:hover::after {
+    opacity: 1;
+    border-radius: 4px;
+}
+
+&:hover,
+&:focus {
+    color: var(--name-color);
+}
+}
+
+.site-nav__contact {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+
+
+& a {
+    display: flex;
+    align-items: center
+}
+}
+
+.site-nav__contact-list:first-child {
+    margin-right: 50px;
+}
+
+.site-nav__contact-list:hover .icon-contact {
+    fill: var(--name-color);
+}
+
+.site-nav__contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+
+
+&:hover,
+&:focus {
+    color: var(--name-color);
+}
+
+&:hover .site-nav__contact-icon,
+&:focus .site-nav__contact-icon {
+    fill: var(--name-color);
+}
+}
+.site-nav__contact-icon {
+    margin-right: 10px;
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--animation);
+}
